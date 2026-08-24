@@ -31,7 +31,13 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        new: new {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
+      　　};
+　　　　　new: new {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp M &kp N6 &kp C &kp Q &kp P &kp J &kp N6 &kp U &kp E>;
