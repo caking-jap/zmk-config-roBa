@@ -36,8 +36,13 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
-      　　};
-　　　　　new: new {
+
+            　　
+        };
+
+        　　　　　
+
+        new: new {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp M &kp N6 &kp C &kp Q &kp P &kp J &kp N6 &kp U &kp E>;
@@ -142,6 +147,24 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
