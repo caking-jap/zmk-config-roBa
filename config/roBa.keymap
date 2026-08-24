@@ -31,26 +31,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
@@ -66,17 +46,16 @@
         };
     };
 
-     encoder_msc_down_up: encoder_msc_down_up {
+    encoder_msc_down_up: encoder_msc_down_up {
         compatible = "zmk,behavior-sensor-rotate";
         label = "ENCODER_MSC_DOWN_UP";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-         // 追加: スクロールのタップ時間を設定 (20ms)
+        // 追加: スクロールのタップ時間を設定 (20ms)
 
         tap-ms = <20>;
-        };
-
+    };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
@@ -87,11 +66,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-             compatible = "zmk,behavior-sensor-rotate";
-             #sensor-binding-cells = <0>;
-             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-             tap-ms = <20>;
+
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
         };
     };
 
@@ -101,7 +82,7 @@
         default_layer {
             bindings = <
 &kp Q         &kp W         &kp E          &kp R      &kp T                                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A         &kp S         &kp D          &kp F      &kp G        &lt_to_layer_0 6 LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp A         &kp S         &kp D          &kp F      &kp G        &lt_to_layer_0 6 LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z         &kp X         &kp C          &kp V      &kp B        &kp COLON                       &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(GRAVE)  &kp LCTRL  &lt 2 SPACE  &lt_to_layer_0 3 TAB            &kp BACKSPACE  &lt 1 ENTER                             &kp RIGHT_SHIFT
             >;
@@ -129,7 +110,7 @@
 
         Shortcut {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &trans     &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &trans     &kp EQUAL
 &trans            &trans            &trans            &trans            &trans      &kp LC(LS(N))      &trans     &trans            &trans      &trans      &trans     &trans
 &trans            &trans            &trans            &trans            &trans      &kp LG(V)          &kp LC(V)  &kp LS(LC(V))     &kp LC(Z)   &trans      &kp LC(Y)  &trans
 &trans            &trans            &trans            &trans            &trans      &trans             &kp LC(X)  &kp LC(C)                                            &trans
