@@ -76,28 +76,28 @@
 
         num {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3  &kp NUMBER_4             &kp N5                             &kp NUMBER_6  &kp N7          &kp N8          &kp N9           &kp N0
-&trans        &kp LC(LG(LEFT_ARROW))  &trans        &kp RC(LG(RIGHT_ARROW))  &trans  &kp LC(LA(F))      &trans  &trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
-&trans        &trans                  &trans        &trans                   &trans  &trans             &trans  &trans        &trans          &kp DOWN_ARROW  &trans           &trans
-&trans        &trans                  &trans        &trans                   &trans  &trans             &trans  &trans                                                         &new
+&kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3  &kp NUMBER_4             &kp N5                                      &kp NUMBER_6  &kp N7          &kp N8          &kp N9           &kp N0
+&trans        &kp LC(LG(LEFT_ARROW))  &trans        &kp RC(LG(RIGHT_ARROW))  &trans  &kp LC(LA(F))               &trans  &trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
+&trans        &trans                  &trans        &trans                   &trans  &kp LC(LS(DOWN_ARROW))      &trans  &trans        &trans          &kp DOWN_ARROW  &trans           &trans
+&trans        &trans                  &trans        &trans                   &trans  &trans                      &trans  &trans                                                         &new
             >;
         };
 
         Function {
             bindings = <
-&kp LS(LC(ESCAPE))  &kp F2  &kp F3  &kp F4  &kp F5                                    &kp F6             &kp F7    &kp F8  &kp F9    &kp F10
-&trans              &trans  &trans  &trans  &kp LS(N9)        &trans      &trans      &kp RS(N0)         &mkp MB1  &trans  &mkp MB2  &kp F12
-&trans              &trans  &trans  &trans  &kp LEFT_BRACKET  &trans      &trans      &kp RIGHT_BRACKET  &mkp MB4  &trans  &mkp MB5  &trans
-&trans              &trans  &trans  &trans  &trans            &trans      &kp DELETE  &trans                                         &trans
+&kp LS(LC(ESCAPE))  &kp F2  &kp F3  &kp F4  &kp F5                                       &kp F6             &kp F7    &kp F8  &kp F9    &kp F10
+&trans              &trans  &trans  &trans  &kp LS(N9)        &trans      &kp LS(GRAVE)  &kp RS(N0)         &mkp MB1  &trans  &mkp MB2  &kp F12
+&trans              &trans  &trans  &trans  &kp LEFT_BRACKET  &trans      &kp EQUAL      &kp RIGHT_BRACKET  &mkp MB4  &trans  &mkp MB5  &trans
+&trans              &trans  &trans  &trans  &trans            &trans      &kp DELETE     &trans                                         &trans
             >;
         };
 
         Shortcut {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &trans     &kp EQUAL
-&trans            &trans            &trans            &trans            &trans      &kp LC(LS(N))      &trans     &trans            &trans      &trans      &trans     &trans
-&trans            &trans            &trans            &trans            &trans      &kp LG(V)          &kp LC(V)  &kp LS(LC(V))     &kp LC(Z)   &trans      &kp LC(Y)  &trans
-&trans            &trans            &trans            &trans            &trans      &trans             &kp LC(X)  &kp LC(C)                                            &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &trans     &kp EQUAL
+&trans            &trans            &trans            &trans            &trans      &kp LC(LS(N))      &trans         &trans            &trans      &trans      &trans     &trans
+&trans            &trans            &trans            &trans            &trans      &kp LG(V)          &kp LC(LS(V))  &kp LC(V)         &kp LC(Z)   &trans      &kp LC(Y)  &trans
+&trans            &trans            &trans            &trans            &trans      &trans             &kp LC(X)      &kp LC(C)                                            &kp LS(LG(S))
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
