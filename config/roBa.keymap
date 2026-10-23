@@ -94,7 +94,7 @@
 
         Shortcut {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &trans     &kp EQUAL
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &trans     &trans
 &trans            &trans            &trans            &trans            &trans      &kp LC(LS(N))      &trans         &trans            &trans      &trans      &trans     &trans
 &trans            &trans            &trans            &trans            &trans      &kp LG(V)          &kp LC(LS(V))  &kp LC(V)         &kp LC(Z)   &trans      &kp LC(Y)  &trans
 &trans            &trans            &trans            &trans            &trans      &trans             &kp LC(X)      &kp LC(C)                                            &kp LS(LG(S))
